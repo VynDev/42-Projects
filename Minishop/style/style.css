@@ -1,0 +1,177 @@
+body
+{
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+	margin: 0 0 0 0;
+}
+
+header
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 1px solid black;
+	box-shadow: 0px 0px 4px black;
+	margin-bottom: 20px;
+	height: 100px;
+}
+
+footer
+{
+	border-top: 1px solid black;
+	box-shadow: 0px 0px 4px black;
+	margin-top: 20px;
+}
+
+header, footer
+{
+	background-color: rgb(200, 200, 200);
+}
+
+header h1 a
+{
+	text-decoration: none;
+	color: black;
+}
+
+header a
+{
+	text-decoration: none;
+	color: purple;
+}
+
+p, h1, h2
+{
+	margin: 5px;
+}
+
+.logo
+{
+	margin-left: 50px;
+}
+
+.category_selector
+{
+	margin-left: 20px;
+}
+
+.category_selector input[type="submit"]
+{
+	margin-left: 10px;
+}
+
+.deconnection
+{
+	color: red;
+}
+
+.form_category
+{
+	display: flex;
+	flex-direction: column;
+	width: 50%
+}
+
+.form_category_input
+{
+	
+}
+
+.form_category_button
+{
+	display: flex;
+	justify-content: space-between;
+}
+
+.form_category_button input
+{
+	flex: 1;
+}
+
+.content
+{
+	margin: 10px 10px 10px 10px;
+	flex: 1;
+}
+
+#products_login
+{
+	display: flex;
+}
+
+#products
+{
+	flex: 1;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.product
+{
+	display: inline-block;
+	border: 1px solid black;
+	box-shadow: 0px 0px 2px;
+	margin: 10px;
+	width: 200px;
+	height: 225px;
+	overflow: hidden;
+	position: relative;
+}
+
+.product .product_name
+{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	text-align: center;
+}
+
+.product a
+{
+	text-decoration: none;
+	color: black;
+}
+
+.product img
+{
+	width: 100%;
+}
+
+label
+{
+	display: inline-block;
+	width: 200px;
+}
+
+.perror
+{
+	color: red;
+}
+
+#plogin
+{
+	text-align: right;
+}
+
+#login_create
+{
+	border: 1px solid black;
+	box-shadow: 1px 1px 4px;
+	padding: 10px;
+	align-self: flex-start;
+}
+
+#product_description
+{
+	display: flex;
+	margin-bottom: 5px;
+}
+
+.product_description_div
+{
+	border: 1px solid black;
+	flex: 1;
+}

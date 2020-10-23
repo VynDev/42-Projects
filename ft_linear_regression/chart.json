@@ -1,0 +1,71 @@
+{
+	"$schema": "https://vega.github.io/schema/vega/v4.json",
+	"width": 600,
+	"height": 600,
+	"padding": 5,
+	"background": "#ffffff",
+	"data": [
+		{
+			"name": "table",
+			"values": null
+		}
+	],
+
+	"scales": [
+		{
+			"name": "x",
+			"type": "linear",
+			"round": true,
+			"nice": true,
+			"zero": true,
+			"domain": {"data": "linear_regression", "field": "x"},
+			"range": "width"
+		},
+		{
+			"name": "y",
+			"type": "linear",
+			"round": true,
+			"nice": true,
+			"zero": true,
+			"domain": {"data": "linear_regression", "field": "y"},
+			"range": "height"
+		}
+	],
+
+	"axes": [
+		{
+			"scale": "x",
+			"grid": true,
+			"domain": false,
+			"orient": "bottom",
+			"tickCount": 5,
+			"title": "KM"
+		},
+		{
+			"scale": "y",
+			"grid": true,
+			"domain": false,
+			"orient": "left",
+			"titlePadding": 5,
+			"title": "Price"
+		}
+	],
+
+	"marks": [
+		{
+			"name": "marks",
+			"type": "symbol",
+			"from": {"data": "table"},
+			"encode": {
+				"enter": {
+					"x": {"scale": "x", "field": "km"},
+					"y": {"scale": "y", "field": "price"},
+					"shape": {"value": "circle"},
+					"strokeWidth": {"value": 2},
+					"opacity": {"value": 1},
+					"fill": {"value": "#0000FF"}
+				}
+			}
+		}
+	]
+}
